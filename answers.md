@@ -96,3 +96,33 @@ Group:
 2e. canJump(), jump()
 2f. test all scenarios
 
+Part4 
+=====
+Set 7:
+1. act, getActors, processActors, getMoveLocations, selectMoveLocation, makeMove
+2. getActors, processActors, getMoveLocations, selectMoveLocation, makeMove
+3. no it should be the same method
+4. it can eat them, make the change color, or do nothing
+5. removeSelfFromGrid, moveTo, getLocation
+6. each critter is unique
+
+Set 8:
+1. ChameleonCritter changes the processActors and makeMove methods which are used by act
+2. It needs to change the direction on uniquely, but when it actually mves it can just call it normally
+3. after the critter moves you would have to put a flower in the old location
+4. the critter doesnt process the actors in a different way so it can use the same
+5. actor class
+6. using getGrid
+
+Set 9:
+1. the crab uses the sae behavior as critter
+2. it calls getActors which finds all the actors one block around it and then does processActors to "eat" them
+3. it returns adjacent locations from the crab
+4. (4,3) (4,5) (4,4)
+5. A crab only moves left and right, but neither turn to the direction they are going
+6. if loc = makeMove
+7. it removes actors that are not rocks or critters
+
+
+
+
